@@ -9,7 +9,6 @@ services:
     volumes:
       - .:/apps
 
-services:
   postgres:
     image: postgres
     container_name: arle-postgres
