@@ -1,26 +1,10 @@
-name: arle-apps
+name: my-arle-project
 
 services:
   app:
-    image: arle-image
-    container_name: my-arle-apps
+    image: my-arle-image
+    container_name: my-docker-container
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
-      - .:/apps
-
-  postgres:
-    image: postgres
-    container_name: arle-postgres
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    restart: unless-stopped
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - .:/app
