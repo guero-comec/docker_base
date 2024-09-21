@@ -2,14 +2,12 @@ name: arle-apps
 
 services:
   app:
-    image: my-docker-image
+    image: arle-image
     container_name: my-arle-apps
     ports:
       - "8000:8000"
     volumes:
       - .:/apps
-
-name: arle-project
 
 services:
   postgres:
