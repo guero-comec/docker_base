@@ -1,0 +1,8 @@
+.env
+venv/
+venv_docker/
+.venv_docker/
+Dockerfile
+migrations/
+__pycache__/
+db.sqlite3
