@@ -3,7 +3,7 @@ name: arle-apps
 services:
   app:
     image: my-docker-image
-    container_name: my-docker-container
+    container_name: my-arle-apps
     ports:
       - "8000:8000"
     volumes:
