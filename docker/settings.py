@@ -92,6 +92,7 @@ DATABASES = {
         'HOST': 'postgres',
         'PORT': 5432
     }
+}
 
 
 # Password validation
